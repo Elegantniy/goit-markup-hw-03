@@ -31,6 +31,9 @@ body {
   letter-spacing: 0.03em;
   font-size: 14px;
 }
+.section {
+  padding: 94px 0;
+}
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -46,10 +49,22 @@ body {
 
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
 
 /* header */
+header {
+  border-bottom: 1px solid #ECECEC;
+
+}
+/* .header-list {
+} */
 .logo-icon {
   color: var(--primary-action-color);
 }
@@ -61,6 +76,7 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  padding-top: 24px;
 }
 
 .logo-icon,
@@ -73,6 +89,7 @@ body {
   text-decoration: none;
   font-weight: 500;
   line-height: 1.14;
+  display: inline-block;
 }
 
 .contact-link-item {
@@ -81,6 +98,7 @@ body {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  display: inline-block;
 }
 
 .nav-link:hover,
@@ -102,15 +120,19 @@ body {
 
 .hero {
   background-color: var(--bckg-footer-color);
+  text-align: center;
+  margin-bottom: 94px;
 }
 .hero-title {
   color: var(--white-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 30px;
+  /* max-width: 700px; */
 }
 .hero-button {
   background-color: var(--primary-action-color);
@@ -118,10 +140,11 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
   align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
+  border-radius: 4px;
+  padding: 10px 32px;
+  border-style: none;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -130,23 +153,36 @@ body {
 
 /* features */
 
+.features-list {
+  display: flex;
+}
 .features-title {
   color: var(--primary-title-color);
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 10;
 }
 
 .features .text {
   line-height: 1.71;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.section.features {
+  padding: 0;
 }
 
 /* about */
+
 .section-title {
   color: var(--primary-title-color);
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 50px;
 }
 
 /* team */
@@ -154,18 +190,33 @@ body {
 .team {
   background-color: var(--second-bckd-color);
 }
-
+.section-title.team {
+  margin-top: 0;
+  margin-bottom: 50px;;
+}
+.team-img {
+  margin-top: 0;
+  /* margin-bottom: 30px; */
+}
 .team-title {
   color: var(--primary-title-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 .team-text {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.team-info {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 /* footer */
@@ -182,6 +233,8 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  padding-top: 60px;
+  padding-bottom: 20px;
 }
 
 .footer-adress {
@@ -189,8 +242,8 @@ body {
   font-style: normal;
   text-decoration: none;
   line-height: 1.71;
+  padding-bottom: 9px;
 }
-
 /* .footer-adress:hover,
 .footer-adress:focus {
   color: var(--primary-action-color);
@@ -201,6 +254,7 @@ body {
   text-decoration: none;
   line-height: 1.71;
   font-style: normal;
+  padding-bottom: 9px;
 }
 
 .footer-contact-link:hover,
@@ -208,10 +262,14 @@ body {
   color: var(--primary-action-color);
 }
 
-
 /* portfolio.html */
 
 /* portfolio */
+
+.filter-list {
+  margin-bottom: 34px;
+  
+}
 .filter-btn {
   color: var(--primary-title-color);
   cursor: pointer;
@@ -228,18 +286,26 @@ body {
   background-color: var(--primary-action-color);
   color: var(--white-color);
 }
-
+.project-img {
+  margin-bottom: 20px;
+}
+.project-card {
+  border: 1px solid #ECECEC;
+}
 .project-title {
   color: var(--primary-title-color);
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-top: 0;
+  margin-bottom: 4px;
 }
 
 .project-text {
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.87;
+  margin-top: 0;
+  margin-bottom: 0;
+
 }
-
-
