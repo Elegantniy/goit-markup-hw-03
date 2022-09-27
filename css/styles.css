@@ -279,7 +279,7 @@ body {
 
 .footer {
   background-color: var(--bckg-footer-color);
-  padding: 60px;
+  padding: 60px 0px;
 }
 
 .footer-logo-link {
@@ -377,17 +377,12 @@ body {
 .project-list {
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
 }
 .project-card {
-  box-sizing: border-box;
   border: 1px solid #ececec;
-  margin-right: 30px;
-  margin-bottom: 30px;
   max-width: 370px;
-  width: calc((100%-2 * 30px) / 3);
-}
-.project-card:nth-child(3n + 3) {
-  margin-right: 0;
+  width: calc((100% - 60px) / 3);
 }
 .project-info {
   padding: 20px 24px;
